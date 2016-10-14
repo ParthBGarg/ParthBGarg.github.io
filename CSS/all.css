@@ -53,6 +53,10 @@ h1, h2, h3 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+p, span, label, a, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
 #home {
   min-height: 650px;
   background: url("https://d3i6fh83elv35t.cloudfront.net/newshour/wp-content/uploads/2016/10/GettyImages-599724318-1024x683.jpg") 50% 50% no-repeat;
@@ -128,4 +132,25 @@ h1, h2, h3 {
 
 #stories .grid-item--tall {
   height: 500px;
+}
+
+#links h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#links p {
+  line-height: 2em;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 70px;
+  margin-left: 70px;
+  font-size: 18px;
+}
+
+#links ul {
+  text-align: center;
+  line-height: 2em;
+  font-size: 18px;
+  padding-top: 20px;
 }
