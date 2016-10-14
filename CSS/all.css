@@ -1,156 +1,73 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,700';
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
-body {
-  line-height: 1;
-}
+body { line-height: 1; }
 
-ol, ul {
-  list-style: none;
-}
+ol, ul { list-style: none; }
 
-blockquote, q {
-  quotes: none;
-}
+blockquote, q { quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
-h1, h2, h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
+h1, h2, h3 { font-family: 'Open Sans Condensed', sans-serif; }
 
-p, span, label, a, li {
-  font-family: 'Open Sans', sans-serif;
-}
+p, span, label, a, li, textarea, input { font-family: 'Open Sans', sans-serif; }
 
-#home {
-  min-height: 650px;
-  background: url("https://d3i6fh83elv35t.cloudfront.net/newshour/wp-content/uploads/2016/10/GettyImages-599724318-1024x683.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  position: relative;
-}
+h2 { text-align: center; font-size: 30px; margin-top: 20px; margin-bottom: 30px; }
 
-#home h1 {
-  font-size: 72px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: white;
-}
+form { max-width: 450px; margin: 0px auto 50px; }
 
-#home nav {
-  float: left;
-  margin: 10px;
-}
+form input, form textarea { border: 2px solid black; width: 100%; box-sizing: border-box; padding: 10px; }
 
-#home nav a {
-  margin-right: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
+form .sumbit-wrap { text-align: right; }
 
-#home nav a:hover {
-  color: white;
-}
+form [type="submit"] { background: #000; color: white; font-size: 18px; text-transform: uppercase; width: 33%; }
 
-#stories h2 {
-  text-align: center;
-  font-size: 30px;
-  padding-top: 15px;
-}
+form [type="submit"]:focus { outline: none; border-color: rgba(0, 0, 0, 0.7); }
 
-#stories .grid-item {
-  color: white;
-  font-family: 'Open Sans';
-  font-size: 24px;
-  margin: 10px;
-  height: 300px;
-  width: 300px;
-  float: left;
-  position: relative;
-  display: inline-block;
-}
+form textarea { height: 10em; }
 
-#stories .grid-item span {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
+form .contact-info-group label { width: 50%; float: left; box-sizing: border-box; }
 
-#stories .grid-item--big {
-  height: 500px;
-  width: 500px;
-}
+form .contact-info-group label:nth-child(1) { padding-right: 5px; }
 
-#stories .story-wrap {
-  margin-top: 20px;
-}
+form .contact-info-group label:nth-child(2) { padding-left: 5px; }
 
-#stories .grid-item--wide {
-  height: 180px;
-  width: 300px;
-}
+form label { display: block; margin-bottom: 20px; }
 
-#stories .grid-item--tall {
-  height: 500px;
-}
+form label span { display: block; }
 
-#links h2 {
-  text-align: center;
-  font-size: 30px;
-}
+#home { min-height: 650px; background: url("https://d3i6fh83elv35t.cloudfront.net/newshour/wp-content/uploads/2016/10/GettyImages-599724318-1024x683.jpg") 50% 50% no-repeat; background-size: cover; position: relative; }
 
-#links p {
-  line-height: 2em;
-  text-align: center;
-  margin-top: 15px;
-  margin-right: 70px;
-  margin-left: 70px;
-  font-size: 18px;
-}
+#home h1 { font-size: 72px; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: white; }
 
-#links ul {
-  text-align: center;
-  line-height: 2em;
-  font-size: 18px;
-  padding-top: 20px;
-}
+#home nav { float: left; margin: 10px; }
+
+#home nav a { margin-right: 10px; font-family: 'Open Sans', sans-serif; font-size: 18px; color: rgba(255, 255, 255, 0.6); text-decoration: none; }
+
+#home nav a:hover { color: white; }
+
+#stories h2 { text-align: center; font-size: 30px; padding-top: 15px; }
+
+#stories .grid-item { color: white; font-family: 'Open Sans'; font-size: 24px; margin: 10px; height: 300px; width: 300px; float: left; position: relative; display: inline-block; }
+
+#stories .grid-item span { position: absolute; bottom: 10px; right: 10px; }
+
+#stories .grid-item--big { height: 500px; width: 500px; }
+
+#stories .story-wrap { margin-top: 20px; }
+
+#stories .grid-item--wide { height: 180px; width: 300px; }
+
+#stories .grid-item--tall { height: 500px; }
+
+#links h2 { text-align: center; font-size: 30px; }
+
+#links p { line-height: 2em; text-align: center; margin-top: 15px; margin-right: 70px; margin-left: 70px; font-size: 18px; }
+
+#links ul { text-align: center; line-height: 2em; font-size: 18px; padding-top: 20px; }
