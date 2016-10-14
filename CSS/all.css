@@ -87,3 +87,45 @@ h1, h2, h3 {
 #home nav a:hover {
   color: white;
 }
+
+#stories h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+#stories .grid-item {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+#stories .grid-item span {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#stories .grid-item--big {
+  height: 500px;
+  width: 500px;
+}
+
+#stories .story-wrap {
+  margin-top: 20px;
+}
+
+#stories .grid-item--wide {
+  height: 180px;
+  width: 300px;
+}
+
+#stories .grid-item--tall {
+  height: 500px;
+}
