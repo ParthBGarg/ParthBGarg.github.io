@@ -1,0 +1,100 @@
+.section-work
+    overflow-x: hidden
+
+.work-belt
+    width: 200%
+    position: relative
+    left: 0%
+    transition: left 800ms
+
+.thumb-wrap, .work-wrap
+    width: 50%
+    float: left
+
+#gallery
+    text-align: center
+    font:
+        family: 'PT Sans Narrow'
+        size: 36px
+    padding-bottom: 20px
+
+.thumb-container
+    max-width: 960px
+    margin: 0px auto
+    padding-bottom: 100px
+    +clearfix
+
+    .thumb-unit
+        display: block
+        width: 25%
+        float: left
+        position: relative
+        padding-top: 20%
+        overflow: hidden
+
+        background:
+            position: center center
+            repeat: no-repeat
+            size: cover
+
+        .thumb-overlay
+            +position(absolute, 100% 0px null 0px)
+            height: 100%
+            background: fade-out(black, .4)
+            transition: all 100ms
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: space-around
+
+            strong
+                padding: 20px
+                display: block
+                font-weight: 300
+                text-transform: uppercase
+                font-size: 24px
+                color: white
+
+        &:hover .thumb-overlay
+            +position(absolute, 0px 0px 0px 0px)
+a
+    color: black
+    text-decoration: none
+    outline: 0
+
+    &:hover
+        color: white
+
+.work-container
+    max-width: 600px
+    margin: 0px auto
+    display: none
+
+    h4
+        color: #000
+        font:
+            family: 'PT Sans Narrow'
+            weight: 300
+            size: 24px
+        text-transform: uppercase
+        line-height: 1.2
+
+    img
+        max-width: 100%
+        margin-bottom: 20px
+
+    .work-return
+        +position(absolute, 26.5px 1050px null null)
+
+        svg
+            +size(36px)
+            cursor: pointer
+            opacity: 0.5
+
+        path
+            fill: rgba(0, 0, 0, 0.4)
+
+        svg
+
+            &:hover
+                opacity: 1
