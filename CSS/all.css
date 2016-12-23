@@ -59,6 +59,16 @@ a:hover { color: white; }
 
 .work-container .work-return svg:hover { opacity: 1; }
 
+.calender-wrap { width: 100%; }
+
+.calender-wrap h3 { font-family: 'PT Sans Narrow'; font-size: 36px; text-align: center; }
+
+.calender-wrap .calender-unit { margin: 0 auto; width: 50%; font-family: 'PT Sans'; border-bottom: 0.5px solid rgba(0, 0, 0, 0.5); font-weight: 300; padding: 10px; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+.calender-wrap .calender-unit .date { max-width: 100px; font-size: 25px; text-align: center; }
+
+.calender-wrap .calender-unit .name { font-size: 25px; font-weight: 300; display: inline-block; margin: auto; }
+
 body { margin: 0px; padding: 0px; }
 
 body header { min-height: 100vh; margin: 0px; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/garg-jump-v2.JPG); background-size: cover; background-repeat: no-repeat; }
