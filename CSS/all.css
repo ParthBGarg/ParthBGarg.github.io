@@ -108,3 +108,15 @@ body header h1 { text-align: center; clear: both; font-size: 72px; font-weight: 
 #suggestions form label { display: block; margin-bottom: 20px; }
 
 #suggestions form label span { display: block; }
+
+footer { background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Images/garg-jump-v2.jpg); background-size: cover; }
+
+footer .lockup { padding: 70px 30px; clear: both; }
+
+footer .lockup .content-wrap { float: left; margin: auto 0; }
+
+footer .lockup .content-wrap .copyright { margin: 0; text-transform: uppercase; font-style: 12px; color: white; opacity: 0.5; padding-top: -15px; }
+
+footer .lockup .content-wrap a { color: rgba(255, 255, 255, 0.7); display: inline-block; margin-right: 30px; margin-bottom: 5px; }
+
+footer .lockup .content-wrap a:hover { color: white; }
