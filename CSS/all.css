@@ -89,6 +89,8 @@ body header h1 { text-align: center; clear: both; font-size: 72px; font-weight: 
 
 #suggestions form input, #suggestions form textarea { border: 3px solid black; width: 100%; box-sizing: border-box; padding: 10px; }
 
+#suggestions form input:focus, #suggestions form textarea:focus { outline: none; border-color: rgba(0, 0, 0, 0.5); }
+
 #suggestions form .submit-wrap { text-align: right; }
 
 #suggestions form [type="submit"] { background: #000; color: white; font-family: 'PT Sans'; font-size: 18px; text-transform: uppercase; width: 33%; }
@@ -97,13 +99,11 @@ body header h1 { text-align: center; clear: both; font-size: 72px; font-weight: 
 
 #suggestions form textarea { height: 10em; }
 
-#suggestions form:focus { outline: none; border-color: rgba(0, 0, 0, 0.5); }
-
 #suggestions form .contact-info-group label { width: 50%; float: left; box-sizing: border-box; }
 
-#suggestions form .contact-info-group label:nth-child(1) { padding-right: 5px; }
+#suggestions form .contact-info-group label:nth-child(1) { padding-right: 10px; }
 
-#suggestions form .contact-info-group label:nth-child(2) { padding-left: 5px; }
+#suggestions form .contact-info-group label:nth-child(2) { padding-left: 10px; }
 
 #suggestions form label { display: block; margin-bottom: 20px; }
 
