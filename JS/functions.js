@@ -1,6 +1,7 @@
 $(document).ready(function () {
     photoBelt();
     picLoad();
+    smoothScroll(300);
 });
 
 function photoBelt() {
@@ -26,3 +27,17 @@ function picLoad() {
         $('.project-title').text(newTitle);
     });
 };
+
+function smoothScroll (duration) {
+	$('a[href^="#"]').on('click', function(event) {
+
+	    var target = $( $(this).attr('href') );
+
+	    if( target.length ) {
+	        event.preventDefault();
+	        $('html, body').animate({
+	            scrollTop: target.offset().top
+	        }, duration);
+	    }
+	});
+}
